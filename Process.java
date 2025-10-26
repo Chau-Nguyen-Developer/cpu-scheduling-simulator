@@ -1,3 +1,5 @@
+//PROGRAMMER: CHAU NGUYEN
+
 public class Process
 {
     //INSTANCE VARIABLE
@@ -13,6 +15,27 @@ public class Process
     private int wait_time;
     private int turnaround_time;
 
+    //CONSTRUCTORS
+    //Default Constructor
+    public Process()
+    {
+        PID = 0;
+        arrival_time = 0;
+        burst_time = 0;
+        priorirty = 0;
+        response_time = 0;
+        wait_time = 0;
+        turnaround_time = 0;
+    }
+
+    //Parameterized Constructor
+    public Process(int id, int arrive, int burst, int priorirty)
+    {
+        this.PID = id;
+        this.arrival_time = arrive;
+        this.burst_time = burst;
+        this.priorirty = priorirty;
+    }
     //INSTANCE METHODS
     //GETTER METHODS
     public int getArrivalTime()
@@ -65,6 +88,13 @@ public class Process
     public void setTurnAroundTime(int givenTime)
     {
         this.turnaround_time = givenTime;
+    }
+
+    //HELPER FUNCTION 
+    @Override
+    public String toString()
+    {
+        return "Process [ID = " + this.PID + ", Arrival_Time = " + this.arrival_time + ", Burst_Time = " + this.burst_time + ", Priority = " + this.priorirty + "]\n";
     }
 
 }
