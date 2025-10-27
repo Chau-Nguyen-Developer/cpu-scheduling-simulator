@@ -38,6 +38,10 @@ public class Process
     }
     //INSTANCE METHODS
     //GETTER METHODS
+    public int getPID()
+    {
+        return this.PID;
+    }
     public int getArrivalTime()
     {
         return this.arrival_time;

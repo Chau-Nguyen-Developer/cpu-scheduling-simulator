@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 
-public class Scheduling
+public class CPU_Simulator
 {
     //GLOBAL VARIABLE 
     static int numberOfProcess = 0; 
@@ -26,19 +26,17 @@ public class Scheduling
         //Test: print out processes' info to see whether data is recorded correctly.
         if(success_read_file)
         {
+            System.out.println("Original list: ");
             for(Process p: processesList)
             {
-                System.out.println(p.toString());
+                System.out.print(p.toString());
             }
 
         }
         
 
-        System.out.println("Finish.");
-
-
-
-
+        System.out.println("Doing FCFS Sorting....");
+        ProcessScheduling.firstComeFirstServe(processesList);
     }
 
    //return the number of processes
