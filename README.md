@@ -1,4 +1,23 @@
-# CPU Scheduling Simulator 
+# CPU Scheduling Simulator  
+This program stmulates the following CPU scheduling algorirthms:  
+1. First Come First Serve (FCFS)  
+2. Shortest Job First (SJF)
+3. Preemptive Priority Scheduling  
+4. Round Robin (RR) 
+
+The task information will be read from an input file witht the following format
+```  
+Pid Arrival_Time Burst_Time Priority
+```
+
+All fields are integer type.   
+Unit for time: milliseconds  
+```Pid``` is a unique numberic process ID  
+```Arrival_Time``` is the time when the task arrives  
+```Burst_Time``` is the CPU time requested by a task  
+```Priority``` is the priority associated with each task. Low numbers = High priority.  
+
+Note: For RR algorithm, you need to define a Time-Quantum.  
 
 ### Task  
 Create a simple user interface to ask user for input.txt file, a scheduling algorithn, and Time Quantum if Round Robin is chosen.  
