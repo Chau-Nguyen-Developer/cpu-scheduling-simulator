@@ -1,5 +1,14 @@
 # CPU Scheduling Simulator 
 
+### Task  
+Create a simple user interface to ask user for input.txt file, a scheduling algorithn, and Time Quantum if Round Robin is chosen.  
+
+Print progress of task every unit time (millisecond).
+Once all tasks are completed, the program should compute and print:
+* Average waiting time
+* Average response time
+* Average turn-around time
+* CPU Utilization Rate 
 
 ### Draft Outline
 #### Part 1

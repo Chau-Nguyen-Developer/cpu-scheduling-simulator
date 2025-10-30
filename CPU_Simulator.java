@@ -26,16 +26,22 @@ public class CPU_Simulator
         //Test: print out processes' info to see whether data is recorded correctly.
         if(success_read_file)
         {
+            if(numberOfProcess == 0)
+            {
+                System.out.println("No processes. Empty file.");
+                //Terminate with normal flag.
+                System.exit(0);
+            }
             System.out.println("Original list: ");
             for(Process p: processesList)
             {
-                System.out.print(p.toString());
+                System.out.println(p.toString());
             }
 
         }
         
 
-        System.out.println("Doing FCFS Sorting....");
+        System.out.println("Doing First Come First Serve Sorting....");
         ProcessScheduling.firstComeFirstServe(processesList);
     }
 

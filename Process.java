@@ -11,8 +11,10 @@ public class Process
     //CPU time requested by a task (milliseconds)
     private int burst_time;
     private int priorirty;
-    private int response_time;
+    private int start_time;
+    private int end_time;
     private int wait_time;
+    private int response_time;
     private int turnaround_time;
 
     //CONSTRUCTORS
@@ -23,6 +25,8 @@ public class Process
         arrival_time = 0;
         burst_time = 0;
         priorirty = 0;
+        start_time = 0;
+        end_time = 0;
         response_time = 0;
         wait_time = 0;
         turnaround_time = 0;
@@ -54,6 +58,14 @@ public class Process
     {
         return this.priorirty;
     }
+    public int getStartTime()
+    {
+        return this.start_time;
+    }
+    public int getEndTime()
+    {
+        return this.end_time;
+    }
     public int getResponseTime()
     {
         return this.response_time;
@@ -81,6 +93,14 @@ public class Process
     {
        this.priorirty = givenTime;
     }
+    public void setStartTime(int givenTime)
+    {
+        this.start_time = givenTime;
+    }
+    public void setEndTime(int givenTime)
+    {
+        this.end_time = givenTime;
+    }
     public void setResponseTime(int givenTime)
     {
         this.response_time = givenTime;
@@ -98,7 +118,12 @@ public class Process
     @Override
     public String toString()
     {
-        return "Process [ID = " + this.PID + ", Arrival_Time = " + this.arrival_time + ", Burst_Time = " + this.burst_time + ", Priority = " + this.priorirty + "]\n";
+        return "Process ID = " + this.PID + ", Arrival_Time = " + this.arrival_time + ", Burst_Time = " + this.burst_time + ", Priority = " + this.priorirty;
+    }
+
+    public String extraInfoAfterRunning()
+    {
+        return this.toString() + " Wait_Time= " + this.wait_time + " Response_Time= " + this.response_time + " Turn_around_time= " + this.turnaround_time;
     }
 
 }
