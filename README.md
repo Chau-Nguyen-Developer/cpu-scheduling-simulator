@@ -24,8 +24,12 @@ Unit for time: milliseconds
 
 Note: For RR algorithm, user can modify their chosen Time-Quantum number.  
 
+Example  
+
+![Example Test Case](example_processes.png)
+
 ### What you as a user can expect when this project finishes   
-A simple user interface (a prompt in command line) will pop up to ask you for input.txt file, your chosen CPU Scheduling Algorithm, and Time Quantum (if Round Robin is chosen.)  
+A simple user interface (a prompt in command line) will pop up to ask you for your input (.txt) file, your chosen CPU Scheduling Algorithm, and Time Quantum (if Round Robin is chosen.)  
 
 Print progress of task every unit time (millisecond).
 Once all tasks are completed, the program should compute and print:
