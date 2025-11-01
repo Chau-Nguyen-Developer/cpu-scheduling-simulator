@@ -19,7 +19,7 @@ public class CPU_Simulator
         //DISCLAIMER
         System.out.println("The program currently supports only the First Come First Serve (FCFS) scheduling algorithm. " + 
         "Additional CPU scheduling algorithms are being developed and will be added to GitHub over time. " + 
-        "For more details, please refer to the README.md file. Thank you for using this product. -Chau");
+        "For more details, please refer to the README.md file. Thank you for using this product. -Chau\n");
 
         //READ IN USER'S INPUT FILE
         Scanner scan = new Scanner(System.in);
