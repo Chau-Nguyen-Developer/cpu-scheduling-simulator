@@ -13,7 +13,7 @@ public class CPU_Simulator
     static boolean success_read_file = false;
 
     //MAIN FUNCTION
-    public static void main(String[] args) throws IOException
+    public static void main(String[] args) throws IOException, InterruptedException
     {
         String filePath = "test1.txt";
         if(!readFile(filePath))

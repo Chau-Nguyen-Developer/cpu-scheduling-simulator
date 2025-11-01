@@ -34,11 +34,11 @@ Once all tasks are completed, the program should compute and print:
 [✔] Read from file  
 [✔] Populate info to each process instances
 #### Part 2. First Come First Serve
-[]Sort pocesses based on their arrive time. Use map to look them up fast?  
-[]Create the scheme who go first and who go next  
-[]Wait time of a process = its arrival time + the burst time of the one before it (if it has predecessor)  
-[]Response time = wait time  
-[]Process time = Burst time    
+[✔]Sort pocesses based on their arrive time. 
+[✔]Create the scheme who go first and who go next  
+[✔]Wait time of a process = its start time - its arrival time  
+[✔]Response time = wait time  
+[✔]Process time = Burst time    
 
 #### Part 3. Shortest-Job First
 

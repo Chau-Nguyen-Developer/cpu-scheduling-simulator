@@ -123,7 +123,7 @@ public class Process
 
     public String extraInfoAfterRunning()
     {
-        return this.toString() + " Wait_Time= " + this.wait_time + " Response_Time= " + this.response_time + " Turn_around_time= " + this.turnaround_time;
+        return this.toString() + ", Wait_Time= " + this.wait_time + ", Start_Time= " + this.start_time + ", End_Time = " + this.end_time + ", Response_Time= " + this.response_time + ", Turn_around_time= " + this.turnaround_time;
     }
 
 }
