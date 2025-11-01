@@ -37,13 +37,14 @@ public class ProcessScheduling
             if(currentProcess.getArrivalTime() >= previousProcess.getEndTime())
             {
                 currentProcess.setStartTime(currentProcess.getArrivalTime());
-                idleTime = currentProcess.getArrivalTime() - previousProcess.getEndTime();
+                idleTime += currentProcess.getArrivalTime() - previousProcess.getEndTime();
             }
             else
             {
                 currentProcess.setStartTime(previousProcess.getEndTime());
             }
             currentProcess.setEndTime(currentProcess.getStartTime() + currentProcess.getBurstTime()); 
+            //noticed a lot of redundant code in here
             currentProcess.setWaitTime(currentProcess.getStartTime() - currentProcess.getArrivalTime());
             //because this is non-preemptive First Come First Serve, so response time = wait time
             currentProcess.setResponseTime(currentProcess.getWaitTime());
@@ -63,6 +64,10 @@ public class ProcessScheduling
                 throw new InterruptedException();
             }
             System.out.println("Done...");
+        }
+        
+        for(Process p: list)
+        {
             System.out.println(p.extraInfoAfterRunning());
         }
         
@@ -71,6 +76,7 @@ public class ProcessScheduling
         // static double avgResponseTime = 0.0;
         // static double avgTurnAroundTime = 0.0;
         // static double cpu_util_rate = 0.0;
+        
         for (Process p: list)
         {
             avgWaitTime += p.getWaitTime();
