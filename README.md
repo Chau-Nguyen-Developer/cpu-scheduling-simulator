@@ -38,7 +38,14 @@ Once all tasks are completed, the program should compute and print:
 * Average turn-around time
 * CPU Utilization Rate 
 ### Note:  
-FCFS Algorithm is ready to be used. The rest are under construction. Please stay tuned. 
+FCFS Algorithm is ready to be used. The rest are under construction. Please stay tuned.  
+### How to run the program  
+You can either fork or clone this GitHub repo ([instruction](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)), or simply download the JAR file and run it to use the program.
+
+This is the command to run .jar file at your command line after you download it:    
+```  
+java -jar CPU_Simulator.jar
+```
 
 ### Draft Outline
 #### Part 1
