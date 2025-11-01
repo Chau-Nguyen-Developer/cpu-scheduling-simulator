@@ -4,7 +4,7 @@ https://github.com/Chau-Nguyen-Developer/cpu-scheduling-simulator
 
 ### What is this about?  
 
-This program stmulates the following CPU scheduling algorirthms:  
+This program stimulates the following CPU scheduling algorirthms:  
 1. First Come First Serve (FCFS) (done)  
 2. Shortest Job First (SJF) (under construction)
 3. Preemptive Priority Scheduling  (under construction)
