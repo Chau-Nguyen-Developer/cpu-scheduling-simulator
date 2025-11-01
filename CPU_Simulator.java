@@ -1,3 +1,4 @@
+//PROGRAMMER: CHAU NGUYEN
 import java.util.*;
 import java.io.*;
 
@@ -15,8 +16,18 @@ public class CPU_Simulator
     //MAIN FUNCTION
     public static void main(String[] args) throws IOException, InterruptedException
     {
-        String filePath = "test1.txt";
-        if(!readFile(filePath))
+        //DISCLAIMER
+        System.out.println("The program currently supports only the First Come First Serve (FCFS) scheduling algorithm. " + 
+        "Additional CPU scheduling algorithms are being developed and will be added to GitHub over time. " + 
+        "For more details, please refer to the README.md file. Thank you for using this product. -Chau");
+
+        //READ IN USER'S INPUT FILE
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Please enter your .txt file (ex: test1.txt): ");
+        String filepath = scan.nextLine();
+
+        // String filePath = "test1.txt";
+        if(!readFile(filepath))
         {
             System.out.println("Success_read_file = " + success_read_file);
             System.exit(1);
